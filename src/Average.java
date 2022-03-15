@@ -11,7 +11,7 @@ public class Average {
         int c = sc.nextInt();
         System.out.println("Введите последнее число диапазона: ");
         int d = sc.nextInt();
-        for (c = 1; c <= d; c++) {
+        for (c = 0; c <= d; c++) {
             sum += c;
             count++;
             if (c % 2 == 0) {
