@@ -6,16 +6,18 @@ public class Average {
         int sumEvenNumbers = 0;
         int countEvenNumbers = 0;
         int count = 0;
+        int i = 0;
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите первое число диапазона: ");
         int c = sc.nextInt();
         System.out.println("Введите последнее число диапазона: ");
         int d = sc.nextInt();
-        for (c = 0; c <= d; c++) {
+        for (i = 0; c <= d; c++) {
             sum += c;
             count++;
             if (c % 2 == 0) {
-                sumEvenNumbers = sumEvenNumbers + c;
+                sumEvenNumbers += c;
                 countEvenNumbers++;
             }
         }
